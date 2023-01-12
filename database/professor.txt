@@ -1,0 +1,8 @@
+CREATE TABLE professor(  
+    id int NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    professorCode int UNIQUE not null,
+    name VARCHAR(255) not null,
+    type int not null,
+    group_Id int not null,
+    FOREIGN KEY(group_Id) REFERENCES groups(Id)
+);

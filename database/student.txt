@@ -1,0 +1,7 @@
+CREATE TABLE student(  
+    id int NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    studentCode int UNIQUE not null,
+    name VARCHAR(255) not null,
+    birthday DATE,
+    supervisor_ID int
+);
